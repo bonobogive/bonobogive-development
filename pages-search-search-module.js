@@ -170,8 +170,8 @@ function SearchPage_ion_spinner_35_Template(rf, ctx) { if (rf & 1) {
 function SearchPage_app_adverts_36_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "app-adverts", 24);
 } if (rf & 2) {
-    var ctx_r399 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("adverts", ctx_r399.searchService.searchResults)("enableFavourites", true);
+    var ctx_r353 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("adverts", ctx_r353.searchService.searchResults)("enableFavourites", true);
 } }
 function SearchPage_p_37_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 25);
@@ -257,6 +257,7 @@ var SearchPage = /** @class */ (function () {
             return __generator(this, function (_a) {
                 distance = event.detail.value;
                 this.searchService.searchPageSearchRequest.distanceMiles = distance;
+                this.searchService.refreshSearchResults();
                 this.searchService.search(null, null);
                 console.log(this.searchService.searchPageSearchRequest.sortBy);
                 return [2 /*return*/];

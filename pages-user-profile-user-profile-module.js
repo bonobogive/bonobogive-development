@@ -157,8 +157,8 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 function UserProfilePage_app_circle_image_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-circle-image", 10);
 } if (rf & 2) {
-    var ctx_r366 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("imageUrl", ctx_r366.userProfile == null ? null : ctx_r366.userProfile.pictureUrl)("imageSize", ctx_r366.profileImageSize)("centerImage", ctx_r366.centerImage);
+    var ctx_r320 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("imageUrl", ctx_r320.userProfile == null ? null : ctx_r320.userProfile.pictureUrl)("imageSize", ctx_r320.profileImageSize)("centerImage", ctx_r320.centerImage);
 } }
 function UserProfilePage_div_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div");
@@ -166,8 +166,8 @@ function UserProfilePage_div_10_Template(rf, ctx) { if (rf & 1) {
 function UserProfilePage_app_adverts_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-adverts", 11);
 } if (rf & 2) {
-    var ctx_r368 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("linear", false)("adverts", ctx_r368.userAdverts)("enableFavourites", true);
+    var ctx_r322 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("adverts", ctx_r322.userAdverts)("enableFavourites", true);
 } }
 var UserProfilePage = /** @class */ (function () {
     function UserProfilePage(auth, navController, activatedRoute, imageService, advertClient, userClient) {
@@ -242,7 +242,7 @@ var UserProfilePage = /** @class */ (function () {
     UserProfilePage.prototype.ngAfterViewInit = function () {
     };
     UserProfilePage.ɵfac = function UserProfilePage_Factory(t) { return new (t || UserProfilePage)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ionic_angular__WEBPACK_IMPORTED_MODULE_1__["NavController"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_image_service__WEBPACK_IMPORTED_MODULE_5__["ImageService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_clients_bonobogive_client__WEBPACK_IMPORTED_MODULE_6__["AdvertClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_clients_bonobogive_client__WEBPACK_IMPORTED_MODULE_6__["UserClient"])); };
-    UserProfilePage.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UserProfilePage, selectors: [["user-profile"]], decls: 18, vars: 7, consts: [["title", "User Profile"], [1, "userProfile"], ["slot", "fixed", 3, "ionRefresh"], ["right", "", 1, "ion-padding", 3, "hidden"], [3, "imageUrl", "imageSize", "centerImage", 4, "ngIf"], [4, "ngIf"], [3, "hidden"], [3, "linear", "adverts", "enableFavourites", 4, "ngIf"], ["threshold", "100px", 3, "ionInfinite"], ["loadingSpinner", "bubbles", "loadingText", "Loading more adverts..."], [3, "imageUrl", "imageSize", "centerImage"], [3, "linear", "adverts", "enableFavourites"]], template: function UserProfilePage_Template(rf, ctx) { if (rf & 1) {
+    UserProfilePage.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UserProfilePage, selectors: [["user-profile"]], decls: 18, vars: 7, consts: [["title", "User Profile"], [1, "userProfile"], ["slot", "fixed", 3, "ionRefresh"], ["right", "", 1, "ion-padding", 3, "hidden"], [3, "imageUrl", "imageSize", "centerImage", 4, "ngIf"], [4, "ngIf"], [3, "hidden"], [3, "adverts", "enableFavourites", 4, "ngIf"], ["threshold", "100px", 3, "ionInfinite"], ["loadingSpinner", "bubbles", "loadingText", "Loading more adverts..."], [3, "imageUrl", "imageSize", "centerImage"], [3, "adverts", "enableFavourites"]], template: function UserProfilePage_Template(rf, ctx) { if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ion-header");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-topbar", 0);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -263,7 +263,7 @@ var UserProfilePage = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h3");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, UserProfilePage_app_adverts_15_Template, 1, 3, "app-adverts", 7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, UserProfilePage_app_adverts_15_Template, 1, 2, "app-adverts", 7);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "ion-infinite-scroll", 8);
