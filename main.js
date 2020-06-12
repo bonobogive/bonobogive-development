@@ -9117,11 +9117,13 @@ var AuthService = /** @class */ (function () {
                 }
             ]
         };
-        this.isAuthenticated().then(function () { return __awaiter(_this, void 0, void 0, function () {
+        this.isAuthenticated().then(function (res) { return __awaiter(_this, void 0, void 0, function () {
             var _a;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
+                        if (!res)
+                            return [2 /*return*/];
                         _a = this;
                         return [4 /*yield*/, this.loadUser()];
                     case 1:
@@ -9144,15 +9146,16 @@ var AuthService = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
+                        _a.trys.push([0, 3, , 4]);
                         return [4 /*yield*/, aws_amplify__WEBPACK_IMPORTED_MODULE_1__["Auth"].currentAuthenticatedUser()];
-                    case 1:
+                    case 1: return [4 /*yield*/, _a.sent()];
+                    case 2:
                         _a.sent();
                         return [2 /*return*/, true];
-                    case 2:
+                    case 3:
                         e_1 = _a.sent();
                         return [2 /*return*/, false];
-                    case 3: return [2 /*return*/];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
