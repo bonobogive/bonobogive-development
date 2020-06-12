@@ -9213,6 +9213,7 @@ var AuthService = /** @class */ (function () {
                                 user.pictureUrl = att.getValue();
                             }
                         }
+                        user.name = user.givenName + " " + user.familyName;
                         return [2 /*return*/, user];
                 }
             });
